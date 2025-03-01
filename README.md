@@ -1,7 +1,8 @@
 # Restaurant KEA
+Create a multipage website for Restaurant KEA
 
 ## Tools 
-HTML 5 / CSS3
+HTML5 / CSS3
 
 ## Author
 Frederikke
