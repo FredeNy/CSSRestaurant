@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant KEA</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <header>
+        <h1>Restaurant KEA</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" title="Homepage">Home</a></li>
+            <li><a href="menu.htm" title="Menu page">About</a></li>
+            <li><a href="contact.htm" title="Contact page">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+                <img id="contact" src="img/map.jpg" alt="map over restaurant">
+            <address>
+            <p>Guldbergsgade 29N</p>
+            <p>2200 K&oslash;benhavn N</p>
+            <p>Phone no: <a href="tel:20 82 53 70">20 82 53 70</a></p>
+            <p>E-mail: <a 
+                href="mailto:foodrepo@kea.dk" 
+                title="Send an email to restaurant kea">info@restaurantkea.dk</a></p>
+            </address>
+        </section>
+
+            <form id="frmContact">
+                <fieldset>
+                    <legend>Contact form</legend>
+                <div>
+                    <label for="txtName">Full name</label>
+                    <input type="text" id="txtName" required>
+                </div>
+                <div>
+                    <label for="txtName">Phone no.</label>
+                    <input type="numeric" id="txtPhoneNumber" required>
+                </div>
+                <div>
+                    <label for="txtEmail">Email address</label>
+                    <input type="email" id="txtEmail" required>
+                </div>
+                <div>
+                    <label for="txtPersons">Persons</label>
+                    <input type="numeric" id="txtPersons" required>
+                </div>
+                <div>
+                    <label for="txtDateTime">Date and time</label>
+                    <input type="datetime-local" id="txtDateTime" required>
+                </div>
+                <div>
+                    <label for="txtInfoComment">Further information</label>
+                    <textarea id="txtInfoComment"required></textarea>
+                </div>
+                <div>
+                    <button type="submit">Send</button>
+                    
+                </div>
+            </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2021-2025 Frederikke Nygaard</p>
+    </footer>
+</body>
+
+</html>

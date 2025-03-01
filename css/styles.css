@@ -1,0 +1,129 @@
+@import 'variables.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--TextColorPrimary);
+    background-color: var(--colorBgMain);
+    font-family: var(--fontMain);
+}
+
+header {
+    color: var(--TextColorTertiary);
+    background-color: var(--colorBgHeader);  
+    h1 {
+        font-family: var(--fontTitle);
+        
+    }  
+}
+
+main {
+    margin: 0.7rem 1.5rem;
+}
+
+footer {
+    color: var(--TextColorTertiary);
+    background-color: var(--colorBgFooter); 
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 0.5rem 0;
+    text-align: center;
+    font-size: 0.8rem;    
+    @media only screen and (min-width: 480px) {
+        position: fixed;
+    }
+}
+
+/*mobile viewport*/
+@media (max-width: 600px) {
+    header {
+        padding: 0.10rem 1rem;
+        text-align: center;
+    }
+
+    nav { 
+        background-color: var(--colorBgNav);
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            gap: 0.3rem;
+            
+            li {
+                width: 90%;
+                border-bottom: 1px solid var(--TextColorTertiary);
+                text-align: center;
+                padding-bottom: 0.3rem;
+                list-style: none;
+            }
+
+            /* Fjerner border-bottom fra sidste li */
+            li:last-of-type {
+                border-bottom: none;
+            }
+
+            a {
+                color: var(--TextColorTertiary);
+                text-decoration: none;
+                font-weight: bold;
+                
+                &:hover {
+                    font-size: 1.2rem;
+                    color: var(--colorNavHover);
+                }
+            }
+        }
+    }
+}
+
+/*tablet and bigger*/
+    @media (min-width: 601px) {
+        header {
+            padding: 0.5rem 2rem;
+        }
+
+        nav {
+            background-color: var(--colorBgNav);
+            padding: 1rem 1.5rem;
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+        
+            
+    li {
+        padding-bottom: 0.3rem;
+        list-style: none;
+
+        
+        a{
+            color: var(--TextColorTertiary);
+            text-decoration: none;
+            font-weight: bold;
+            
+            &:hover{
+                font-size: 1.2rem;
+                color: var(--colorNavHover);
+            }
+        }
+        }
+    }
+    }
+
+        }
+    
+
+/*Desktop*/
+@media (min-width: 1200px) {
+    main {
+    margin: 1rem 8rem;
+    }
+}
